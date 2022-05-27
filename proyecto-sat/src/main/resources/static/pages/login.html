@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/factura.css">
+    <title>Inicio de Sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>   
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#"><img src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg" width="128" height="48" alt="Página de inicio, Gobierno de México"></a>
+                
+            <ul class="navbar-nav  ">
+                <li class="nav-item active centrado">
+                  <a class="nav-link " href="#">Tramites</a>
+                </li>
+
+                <li class="nav-item active centrado">
+                  <a class="nav-link " href="#">Gobierno</a>
+                </li>
+                
+                <li class="nav-item active centrado">
+                <i class="bi bi-search" href="#"></i>
+                </li>
+            </ul>
+            
+          </div>
+      </nav>
+    
+    <form action="./factura.html" class="contain-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <legend class=".text-left " font-size="20">Accesso por contraseña</legend>
+                </div>
+                <div class="col-3">
+                </div>
+                <div class="col-3">
+                </div>
+            </div>
+        </div>
+        <form>
+            <input type="hidden" name="option" value="credential">       
+        <div class="container">
+            
+            <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-6">
+                <div class="col ">
+                    <label for="RFC" class="form-label">RFC:</label>
+                    <input type="text" class="form-control" placeholder="RFC" id="RFC" aria-describedby="RFCHelp" required>
+                </div>
+                <div class="col ">
+                    <label for="Contraseña" class="form-label">Contraseña:</label>
+                    <input type="password" class="form-control" id="Contraseña" placeholder="Contraseña" required>
+                </div>
+                
+                <!--CAPTCHA-->
+            <div class="form-group">
+                <label class="col-sm-4 control-label" for="userCaptcha" style="padding-top: 25px;">Captcha:</label>
+                <label class="col-sm-3 control-label" id="divCaptcha">
+                    <img src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAA8CAIAAABuCSZCAAAFAUlEQVR42u3cvWsUQRQA8MV/QNsQUFBEohYRqxNBsQi2RkQMYhMLK0W0i6mEFGIRwdJWrRSsrC0UtLYSwc5CtLWTc2FgGN689+bNm6+9vR1ecbndbHL3y5t5M7OXbr7c7fq/r/JYxBfYLYPi7N4rExPwmHV94CjdCTi1PXn0zo0pg0cFDHSzG09j8AS8lMArN86BqKbLAB94eMiNOsbB66zd2QUxUGAfFY3KGQxQmUgE3t775AYP7KOiMRRgQLh/ZdWPQswMsJw23RjoWmM1bXPmLkq3prFaV91vU8A6XfT8IQIHn6SM108e8yPql1Pr6oxR3bzA9Y07VLd/BoW0xkFgVDfWWOiUMYklwIre2D10dm3fjRrAlKIcGBgzunJjuVNNYN1YC04AxkWZO6psjuqiXeCgrtAYODF+eUfiXOlrH/R+QeByxh0zLxIWWU2AheN09vdLnr5DB5ZX0aWBdbnbBBicZnSFwIWMO2a5StFFC3VTgKNq7JrA6KRo0MBU/UUV3hLj2ewEiCjg2KlU8PVfO7jlRlvgq7f+mivsHF91oxQwv0gpBPZFqdABK4osgMqEHJifEUmAASoTqcDBRWkhsJwWZWbAfDwhsJyWMo5dhgSKKLCcVmEcDUwdtc8/P/pDresyRw2xEmB5Pwz+FILAzHV8XQCs0I0yjh6Dg8B964Ukoy/VOZsng/Ng+VHFWEsZ6zKY6qLVunLjLrjpS61HUt9ieEweS4zRX8sHDo7KUcCuGWMvB2bUg8C2wgKBvjN5gIN7RHz6WmMb4BAP7GawsOyK1WWA3aMlgP30bQNMGfNnSvpeia6wi1anrxDYN9Zt/aIVlgtsRO0zFtjnjO2lu6i7OIJ/B6if+4A/AZzDK/LJHSyeg6W1Oon9d9mAUeWVTVlXbpGAGWMJcHC9Ql4/1wFmtgvdHpgvoHxgXZ3Vxd6KxXfjUcD+Uf8KuiUOyfRXDay7XwfoNgBWGMuHWDVw7H0d8qWrFGCFsV9DNQAWMlPXooBPXTqNErpfSso09bJzCeDY8XhAwOrmA6+/+WYiKCqsw3WtHHBUiwJGS6rGwD5POvCLD+/7GAcwMB4tMDok94+NJQqcyJxxHpzReAzAa1svTQQnRVaRAVYbxwIHtxyyGGcBvvznJhUNgJm1LRQY6GYEFu4yldBFFx11wIyuNW4JjFrywDpjxVZSufTNCPzs8H0TjHH+j4+iwKCXptIXGOcCjjKW3NdRwbg/enf3dh9BXd64yOeDAS1lDMorYIzq5h2G1TfuVAA2unJgyrgUMJXBFpUqppjcLVFLN9TlNw8sMMrs61LGBT/hr75fh9FNnBMPipYxZnQpWsq4+L9wyOWaBVgoPW/U+JKqlw7qNgCWNCFtRuDhN5DEJhYA+MFs04TOWP6DVh7v+FHnNa48fe1GLmOJbmNgq1sUGKWtxgx0U4yFoouRwRLjLLpFjVHdysZDHIODzIk98wQ8kibULWTM6E7AYwAeWwZfPP/Zjwk4L3CscbbdJFS3rXGUbuVhOPGaal0lMKNbznh744wfQ8vgvPPgKGPqGxcDGNX1jQcCXKgpdBcDmNEFxuMG1rVu88t3N9J18wIHdXXG86VpEDiL8QS8eMBHPm64MVjg5mvRie3t7wsmqgID3aBxZV2/nJ433U1K160KjOoyxpUrLAp4QdvQgWtOkEYJXLuKZnT72Pv1041q6xsTsLz9BzHSuQ9x8t6EAAAAAElFTkSuQmCC">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-8">
+                    <input class="form-control" id="userCaptcha" placeholder="Escriba la palabra del captcha" type="text" name="userCaptcha" size="25" maxlength="16" autocomplete="off" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
+                    <span id="msgErrorCap" style="display: none; color: red; font-size: 11px; font-weight: initial;">Este campo es obligatorio.</span>
+                </div>
+            </div>
+            <!--FIN CAPTCHA-->
+            
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-outline-secondary btn-lg">e.firma</button>
+                <button type="submit" class="btn btn-outline-danger btn-lg">Enviar</button>
+                </div>
+            </div>
+
+            </div>
+        </div>
+      </form>
+      <div class="barra">
+    </div>
+
+    <footer id="footer">
+    </footer>
+</body>
+</html>

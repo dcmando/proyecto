@@ -1,0 +1,29 @@
+.icono{
+    color: gray;
+    margin-left: 5%;
+    font-size: 150%;
+}
+
+.texto {
+    font-size: 90%;
+    text-align: center;
+    color: gray;
+}
+
+.texto:hover {
+    color: black!important;
+    font-size: 95%;
+    font-weight: bold!important;
+}
+
+.nav-list:hover {
+    color: green!important;
+    background-color: white;
+}
+.text-secondary:hover {
+    color: green!important;
+}
+.imgs {
+    width: 87%;
+    height: 60%;
+}
